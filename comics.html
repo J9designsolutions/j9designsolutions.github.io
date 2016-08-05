@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOKKLUB - Comics </title>
+	<link rel="stylesheet" type="text/css" href="css/categories.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="icon" href="Icon.ico" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+    <![endif]-->
+</head>
+<body>
+
+	<header>
+	<div>
+		<div class="logo">
+        <a href="home.html"><img src="img/logo.png" class="desktoplogo"></a>
+        <a href="home.html"><img src="img/logomobile.png" class="mobilelogo"></a>
+        </div>
+			<div class="menu">
+				<a href="categories.html">Categories</a>
+				<a href="booklub.html">Book Club</a>
+				<a href="#">My Account</a>
+				<a href="#">Returns</a>
+				<a href="contact.html">Contact</a>
+				<a href="#">Refine</a>
+                <a href="purchase.html"><img src="img/checkout.png" class="checkoutdesktop"></a>
+			</div>
+            <div class="checkoutmobile"><a href="purchase.html"></a><img src="img/checkoutmobile.png"></div>
+            <div class="bar"></div>
+
+		
+	</div>
+	</header>  
+
+                        <div class="dropdown">
+                              <a href="#" class="dropbtn"><img src="img/mobilemenu.png"></a>
+                              <div class="dropdown-content">
+                                <a href="categories.hmtl">Categories</a>
+                                <a href="booklub.html">Book Club</a>
+                                <a href="#">My Account</a>
+                                <a href="#">Returns</a>
+                                <a href="contact.html">Contact</a>
+                                <a href="#">Refine</a>
+                                <a href="purchase.html"><img src="img/checkout.png"></a>
+                              </div>
+                        </div>
+
+<!-- FLEXSLIDER CODE -->
+
+      <div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="img/Banner_1.jpg" />
+    </li>
+    <li>
+      <img src="img/Banner_2.jpg" />
+    </li>
+    <li>
+      <img src="img/Banner_3.jpg" />
+    </li>
+    <li>
+      <img src="img/Banner_4.png" />
+    </li>
+  </ul>
+</div>                   
+
+
+
+
+<!-- ORANGE BAR -->
+    <div class="crossbar"></div>
+    <div class="greycontainer">
+
+<!-- First Section -->
+
+                  <div class="firstrow"> 
+                  <h2>Comics</h2>
+                      <div class="bookimgs">
+                        <a href="#"><img src="img/categories/1.png"></a>
+                        <a href="#"><img src="img/categories/2.png"></a>
+                        <a href="#"><img src="img/categories/3.png"></a>
+                        <a href="#"><img src="img/categories/4.png"></a>
+                        <a href="#"><img src="img/categories/5.png"></a>
+                        <a href="#"><img src="img/categories/6.png"></a>
+                      </div>
+                      <div class="fix"></div>
+
+
+                  </div>
+    <!-- Second Section -->
+
+                  <div class="secondrow"> 
+                  
+                      <div class="bookimgs">
+                        <a href="#"><img src="img/categories/7.png"></a>
+                        <a href="#"><img src="img/categories/8.png"></a>
+                        <a href="#"><img src="img/categories/9.png"></a>
+                        <a href="#"><img src="img/categories/10.png"></a>
+                        <a href="#"><img src="img/categories/11.png"></a>
+                        <a href="#"><img src="img/categories/12.png"></a>
+                      </div>
+                      <div class="fix"></div>
+
+
+                  </div>
+
+
+
+                  <div class="readmore"><a href="#"><img src="img/readmore.png"></a></div>
+                  <br>
+     <div class="divider"></div>               
+                    
+
+    </div>    
+
+<!-- FOOTER SECTION -->
+<footer>
+<div class="footerstuff">
+    <div class="logos">
+        <a href="#"><img src="img/google+logo.png"></a>
+        <a href="#"><img src="img/facebooklogo.png"></a>
+        <a href="#"><img src="img/twitterlogo.png"></a>
+    </div>
+    <div class="info">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Legal Terms</a>
+      <a href="#">Returns</a>
+      <a href="#">Credits</a>
+    </div>   
+    <div class="formandnewsletter">
+      <div class="newslettertitle"></div>
+      <form>
+        <input type="text" class="email" placeholder="What's your email?" required>
+        <input type="submit" value="SEND" class="SEND-button">
+      </form>
+    </div>
+</div>
+</footer>
+
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOKKLUB - Leading online book store</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="icon" href="Icon.ico" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="BookKlub, Books,books,onlinestore,Gameofthrones,Topsellers,Chekout,Categories,recycle,green,returns,blog,contact,">
+    <meta name="author" content="Liam Kirby, Jody Benjami - 2016">
+	 <meta charset="utf-8">
+   <script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false">
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+  <script type="text/javascript">
+    function initialize() {
+      var position = new google.maps.LatLng(-33.9178264, 18.4171512);
+      var myOptions = {
+        zoom: 16,
+        center: position,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(
+          document.getElementById("map_canvas"),
+          myOptions);
+
+      var marker = new google.maps.Marker({
+          position: position,
+          map: map,
+          title:"This is the place."
+
+      });  
+
+      var contentString = 'Seattle <strong>Coffee</strong>! Headquarters';
+      var infowindow = new google.maps.InfoWindow({
+          content: contentString
+      });
+
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+      });
+
+      var searchBox = new google.maps.places.SearchBox(document.getElementById('pac-input'));
+   map.controls[google.maps.ControlPosition.TOP_CENTER].push(document.getElementById('pac-input'));
+   google.maps.event.addListener(searchBox, 'places_changed', function() {
+     searchBox.set('map', null);
+
+
+     var places = searchBox.getPlaces();
+
+     var bounds = new google.maps.LatLngBounds();
+     var i, place;
+     for (i = 0; place = places[i]; i++) {
+       (function(place) {
+         var marker = new google.maps.Marker({
+
+           position: place.geometry.location
+         });
+         marker.bindTo('map', searchBox, 'map');
+         google.maps.event.addListener(marker, 'map_changed', function() {
+           if (!this.getMap()) {
+             this.unbindAll();
+           }
+         });
+         bounds.extend(place.geometry.location);
+
+
+       }(place));
+
+     }
+     map.fitBounds(bounds);
+     searchBox.set('map', map);
+     map.setZoom(Math.min(map.getZoom(),12));
+
+   });
+    }
+
+  </script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+    <![endif]-->
+</head>
+<body class="contact-body" onload="initialize()">
+
+	<header>
+	<div>
+		<div class="logo">
+        <a href="home.html"><img src="img/logo.png" class="desktoplogo"></a>
+        <a href="home.html"><img src="img/logomobile.png" class="mobilelogo"></a>
+        </div>
+			<div class="menu">
+				<a href="categories.html">Categories</a>
+				<a href="booklub.html">Book Club</a>
+				<a href="#">My Account</a>
+				<a href="#">Returns</a>
+				<a href="contact.html">Contact</a>
+				<a href="#">Refine</a>
+
+       
+
+                <a href="purchase.html"><img src="img/checkout.png" class="checkoutdesktop"></a>
+
+                
+			</div>
+            <div class="checkoutmobile"><a href="#"></a><img src="img/checkoutmobile.png"></div>
+            <div class="bar"></div>
+
+		
+	</div>
+	</header>  
+
+                        <div class="dropdown">
+                              <a href="#" class="dropbtn"><img src="img/mobilemenu.png"></a>
+                              <div class="dropdown-content">
+                                <a href="categories.html">Categories</a>
+                                <a href="boklub.html">Book Club</a>
+                                <a href="#">My Account</a>
+                                <a href="#">Returns</a>
+                                <a href="contact.html">Contact</a>
+                                <a href="#">Refine</a>
+                                <a href="purchase.html"><img src="img/checkout.png"></a>
+                              </div>
+                        </div>
+
+<!-- FLEXSLIDER CODE -->
+
+      <div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="img/Banner_1.jpg" />
+    </li>
+    <li>
+      <img src="img/Banner_2.jpg" />
+    </li>
+    <li>
+      <img src="img/Banner_3.jpg" />
+    </li>
+    <li>
+      <img src="img/Banner_4.png" />
+    </li>
+  </ul>
+</div>                   
+
+
+
+
+<!-- ORANGE BAR -->
+    <div class="crossbar"></div>
+    <div class="greycontainer">
+
+<!-- First Section -->
+
+                  <div class="firstrow">
+                      <div class="contactform">
+                        <form action="message.php" method="POST">
+                            
+                            <h1>Contact Us</h1>   
+                            <label></label> 
+                            <label>Email</label>
+                            <input type="text" name="email" placeholder="Email" class="placeholdertext" required>
+                            <label>Location</label>
+                            <input type="text" name="date" placeholder="Location" class="placeholdertext" required>
+                            <a href="#"><img src="img/send.png"></a>
+                      </form>
+                      </div>
+                        <div class="map">
+                            <map>
+                            <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                            <div id="map_canvas"></div>
+                            </map>
+                        </div>
+                      <div class="fix"></div>
+                   </div>
+                
+
+
+
+                  <br>
+                  <br>
+                  <br>
+     <div class="divider"></div>               
+                    
+
+    </div>    
+
+<!-- FOOTER SECTION -->
+<footer>
+<div class="footerstuff">
+    <div class="logos">
+        <a href="#"><img src="img/google+logo.png"></a>
+        <a href="#"><img src="img/facebooklogo.png"></a>
+        <a href="#"><img src="img/twitterlogo.png"></a>
+    </div>
+    <div class="info">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Legal Terms</a>
+      <a href="#">Returns</a>
+      <a href="#">Credits</a>
+    </div>   
+    <div class="formandnewsletter">
+      <div class="newslettertitle"></div>
+      <form>
+        <input type="text" class="email" placeholder="What's your email?" required>
+        <input type="submit" value="SEND" class="SEND-button">
+      </form>
+    </div>
+</div>
+</footer>
+
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+
+
+</body>
+</html>

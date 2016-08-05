@@ -1,0 +1,462 @@
+body, html {
+	background-image: url(../img/1.pndg);
+	font-family: 'Oswald', sans-serif;
+	background-color: #33302D;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+.desktoplogo {
+	float: left;
+	display: block;
+}
+
+.logo img.desktoplogo:hover {
+	transform: scale(1.01);
+}
+
+.mobilelogo {
+	text-align: center;
+	display: block;
+	height: auto;
+	position: fixed;
+	left: 40%;
+}
+
+.firstrow h2{
+
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.checkoutmobile {
+	float: right;
+	margin-top: 5px;
+	margin-right: 30px;
+}
+
+.checkoutdesktop {
+	margin-right: 15%;
+}
+
+img.checkoutdesktop:hover {
+	transform: scale(1.05);
+}
+
+.menu a{
+	text-decoration: none;
+	font-size: 1.5em;
+	padding-left: 4%;
+	color: #fff;
+}
+
+.menu a:visited {
+  color: #fff;
+}
+.social{
+	display: inline-block;
+	width:30%;
+}
+
+.social img{
+
+	display: block;
+	box-sizing: border-box;
+}
+
+.menu a:hover, a:active {
+  color: #D25F27;
+}
+
+
+.menu {
+	margin-top: 1%;
+	margin-left: 30%;
+}
+
+
+.crossbar {
+	background-color: #D25F27;
+	width: 95%;
+	height: 10px;
+	margin: 0 auto;
+}
+
+.divider {
+	background-color: #D25F27;
+	width: 100%;
+	height: 10px;
+	margin: 0 auto;
+}
+
+.greycontainer{
+	background-color: #545352;
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.map {
+	display: block;
+	float: right;
+	margin-left: 0%;
+	margin-right: -25%;
+	width: 100%;
+}
+
+
+/* First row */
+
+.firstrow {
+	display: block;
+	padding-top: 80px;
+
+}
+
+.firstrow h1 {
+	font-size: 2.5em;
+	color: #fff;
+	margin-left: 1.5%;
+}
+
+.Categoryimg {
+	width: 280px;
+	display: inline-block;
+
+}
+
+.Categoryimg img {
+	-webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.52);
+	-moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.52);
+	box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.52);
+}
+
+.Categoryimg img:hover {
+	-webkit-box-shadow: 10px 10px 5px -5px rgba(210,95,39,0.60);
+	-moz-box-shadow: 10px 10px 5px -5px rgba(210,95,39,0.60);
+	box-shadow: 10px 10px 5px -5px rgba(,210,95,39.43);
+	transform: scale(1.03);
+}
+
+.bookimgs img {
+	display: inline-block;
+	padding-left: 50px;
+
+}
+
+.bookimgs img {
+	-webkit-box-shadow: 9px 8px 5px -5px rgba(0,0,0,0.43);
+	-moz-box-shadow: 9px 8px 5px -5px rgba(0,0,0,0.43);
+	box-shadow: 9px 8px 5px -5px rgba(0,0,0,0.43);
+	padding-left: 10px;
+}
+
+.bookimgs img:hover {
+	-webkit-box-shadow: 9px 8px 5px -5px rgba(210,95,39,0.60);
+	-moz-box-shadow: 9px 8px 5px -5px rgba(210,95,39,0.60);
+	box-shadow: 9px 8px 5px -5px rgba(,210,95,39.43);
+	transform: scale(1.03); 
+	padding-left: 10px;
+}
+
+.bookimgs {
+	display: inline-block;
+}
+
+
+.fix {
+	clear: both;
+}
+
+.readmore {
+	margin-left: 86.3%;
+	margin-top: 1%;
+}
+
+.readmore img:hover {
+	transform: scale(1.03); 
+}
+
+footer {
+	background-color: #545352;
+	height: 80px;
+	width: 100%;
+	margin-top: 2%;
+}
+
+.logos img {
+	margin-top: 24px;
+	margin-left: 15px;
+	display: block;
+
+}
+
+footer  a{
+	color: #fff;
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer a:visited {
+  color: #fff;
+}
+
+footer a:hover, a:active {
+  color: #D25F27;
+}
+
+.info {
+	display: block;
+	width: 20%;
+	padding-top: 30px; 	
+	
+}
+.logos {
+	width: 15%;
+	display: block;
+
+	box-sizing: border-box;
+}
+
+.logos img:hover {
+	transform: scale(1.03);
+}
+
+
+.formandnewsletter, .logos, .info {
+	float: left;
+}
+
+.formandnewsletter {
+	color: #fff;
+	display: block;
+	width: 30%;
+	padding: 10px;
+	margin-left: 350px;
+}
+
+.formandnewsletter h3 {
+	font-size: 1em;
+	display: block;
+}
+
+.SEND-button {
+	background-color: #D25F27;
+	display: inline-block;
+
+}
+
+
+
+.email {
+	width: 200px;
+}
+
+.footerstuff {
+	margin-left: 12%;
+}
+
+/* Search */
+#search {
+	background-color: #000;
+ 	color: #888;
+ 	float: right;
+ 	margin-top: -4%;
+ 	margin-right: 40px;
+}
+
+form {
+	padding-top: 16px;
+	float: right;
+}
+
+/* Contact Form */
+
+.contactform h1{
+	font-size: 2em;
+}
+
+.contactform {
+	float: left;
+	margin-left: 8%;
+	margin-top: -20px;
+}
+
+
+.contactform input {
+  display: block;
+  margin: 10px;
+}
+
+.contactform label {
+  margin: 10px;
+  display: block;
+  color: #FF5722;
+  font-size: 1.5em;
+}
+
+.contactform img {
+	margin-left: 50%;
+	margin-top: 2%;
+	transform: scale(0.9);
+}
+
+.contactform img:hover {
+	transform: scale(1.03);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	.desktoplogo {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+	.desktoplogo {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+	.mobilelogo {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+	.mobilelogo {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+	.mobilelogo {
+		display: block;
+		width: 60%;
+		margin-left: -13px;
+		margin-top: 4px;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 1050px) {
+	.menu {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	.checkoutdesktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+	.checkoutdesktop {
+		display: block;
+		float: right;
+		margin-top: 3px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+	.checkoutmobile {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 559px) {
+	.checkoutmobile {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 559px) and (max-width: 768px) {
+	.checkoutmobile {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	.dropbtn {
+		display: block;
+		width: 50px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+	.dropbtn {
+		display: none;
+	}
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 321px) {
+	.dropdown-content, .dropdown-content a:hover, .dropdown:hover, .dropdown-content, .dropdown:hover .dropbtn, .dropdown-content a  {
+		width: 100%;
+		box-shadow: none;
+	}
+}
+
+/* Dropdown Button */
+.dropbtn {
+	
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: -10px;
+    margin-left: 25px;
+   
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    right: 15px;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #B93226}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    /*background-color: #3e8e41;
+}
+
+
+
+
